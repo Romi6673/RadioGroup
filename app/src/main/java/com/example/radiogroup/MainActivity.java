@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (switch1.isChecked()) {
-                    setColorAccordingToSelection(checkedId);
+                    setColor(checkedId);
                 }
             }
         });
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void setColorAccordingToSelection(int checkedColorId) {
+    public void setColor(int checkedColorId) {
         if (checkedColorId == R.id.redBackground) {
             radioGroup.setBackgroundColor(Color.RED);
         } else if (checkedColorId == R.id.blueBackground) {
