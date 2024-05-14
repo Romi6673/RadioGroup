@@ -51,8 +51,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
+
             public void onCheckedChanged(RadioGroup group, int checkedId) {
+
                 if (switch1.isChecked()) {
                     setColor(checkedId);
                 }
